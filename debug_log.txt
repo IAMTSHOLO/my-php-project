@@ -1,0 +1,119 @@
+Array
+(
+    [first_name] => fhuhgv
+    [last_name] => eyufhj
+    [national_id] => 8654
+    [nationality] => chjhff
+    [dob] => 2025-04-04
+    [physical_address] => vcxrt6
+    [contact_details] => 8765
+    [email] => Vicky@gmail.com
+    [password] => 1234
+    [gender] => Male
+    [role] => client
+)
+Array
+(
+    [first_name] => fhuhgv
+    [last_name] => eyufhj
+    [national_id] => 8654
+    [nationality] => chjhff
+    [dob] => 2025-04-04
+    [physical_address] => vcxrt6
+    [contact_details] => 8765
+    [email] => Vicky@gmail.com
+    [password] => 1234
+    [gender] => Male
+    [role] => client
+)
+Array
+(
+    [first_name] => gfdgh
+    [last_name] => dguhh
+    [national_id] => 87555
+    [nationality] => bkkff
+    [dob] => 2025-04-07
+    [physical_address] => iyfgh67
+    [contact_details] => 87554
+    [email] => Vicky@gmail.com
+    [password] => 1234
+    [gender] => Female
+    [role] => client
+)
+Received input: Array
+(
+    [first_name] => ts
+    [last_name] => lm
+    [national_id] => 765
+    [nationality] => mt
+    [dob] => 2025-04-07
+    [physical_address] => po6
+    [contact_details] => 456
+    [email] => Vicky@gmail.com
+    [password] => 123
+    [gender] => Female
+    [role] => client
+)
+Error: Duplicate entry 'Vicky@gmail.com' for key 'email'
+Received input: Received input: Array
+(
+    [first_name] => ts
+    [last_name] => hm
+    [national_id] => 8654
+    [nationality] => hmm
+    [dob] => 2025-04-07
+    [physical_address] => hgf7
+    [contact_details] => 4579
+    [email] => Vicky@gmail.com
+    [password] => 123
+    [gender] => Female
+    [role] => client
+)
+Received input: Array
+(
+    [first_name] => yrdg
+    [last_name] => jhgg
+    [national_id] => 9876
+    [nationality] => jgfg
+    [dob] => 2025-04-07
+    [physical_address] => ougv6
+    [contact_details] => 9754
+    [email] => Vicky@gmail.com
+    [password] => 1234
+    [gender] => Female
+    [role] => client
+)
+Received input: Array
+(
+    [first_name] => iyyhh
+    [last_name] => jhtg
+    [national_id] => 09877
+    [nationality] => mgffgj
+    [dob] => 2025-04-02
+    [physical_address] => khrddv0
+    [contact_details] => 24678
+    [yearsOfExperience] => 7
+    [qualifications] => law
+    [email] => ht@gmail.com
+    [password] => 234
+    [gender] => Male
+    [role] => lawyer
+)
+Error: Column 'years_of_experience' cannot be null
+Received input: Array
+(
+    [first_name] => h
+    [last_name] => m
+    [national_id] => 097
+    [nationality] => kjh
+    [dob] => 2025-04-01
+    [physical_address] => dghh7
+    [contact_details] => 257
+    [years_of_experience] => 2
+    [Qualifications] => law
+    [email] => ty@gmail.com
+    [password] => 12345
+    [gender] => Male
+    [role] => lawyer
+)
+Received input: 
