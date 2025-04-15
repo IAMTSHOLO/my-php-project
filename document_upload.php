@@ -39,15 +39,16 @@ if (isset($_FILES['document']) && isset($_POST['User_id'])) {
                     status,
                     document_size,
                     document_file_path,
-                    User_id
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
+                    User_id,
+                    category
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = $mysqli->prepare($sql);
         $status = 'Active'; // Default document status
         $lastModified = $uploadDate;
 
         $stmt->bind_param(
-            "sssssssi",
+            "sssssssis",
             $fileName,
             $fileType,
             $uploadDate,
@@ -55,7 +56,8 @@ if (isset($_FILES['document']) && isset($_POST['User_id'])) {
             $status,
             $fileSize,
             $filePath,
-            $userId
+            $userId,
+            $category
         );
 
         if ($stmt->execute()) {

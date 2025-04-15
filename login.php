@@ -30,10 +30,13 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
 
         // Compare hashed password from DB
         if (password_verify($password, $user['password'])) {
-         // SUCCESS: Return a simple success message with user ID
-           echo "Login successful|" . $user['User_id'];
-            exit();
+            // SUCCESS: Start session and save user ID
+            session_start();
+            $_SESSION['User_id'] = $user['User_id'];  // Store user ID in session
 
+            // Return success message with user ID
+            echo "Login successful|" . $user['User_id'];
+            exit();
         } else {
             // Wrong password
             echo "Invalid email or password";
