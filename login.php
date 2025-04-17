@@ -34,6 +34,16 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) {
             session_start();
             $_SESSION['User_id'] = $user['User_id'];  // Store user ID in session
 
+            // Create session ID and store in database
+            $session_id = bin2hex(random_bytes(32));  // Generate secure session ID
+            $_SESSION['Session_id'] = $session_id;    // Store session ID in PHP session
+
+            // Insert session into the sessions table
+            $stmt_session = $mysqli->prepare("INSERT INTO sessions (session_id, User_id) VALUES (?, ?)");
+            $stmt_session->bind_param("si", $session_id, $user['User_id']);
+            $stmt_session->execute();
+            $stmt_session->close();
+
             // Return success message with user ID
             echo "Login successful|" . $user['User_id'];
             exit();
