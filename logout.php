@@ -1,4 +1,5 @@
 <?php
+print_r($_SESSION);
 session_start();
 
 // Check if session is active
@@ -20,6 +21,10 @@ if (isset($_SESSION['User_id']) && isset($_SESSION['Session_id'])) {
     $user_id = $_SESSION['User_id'];
     $session_id = $_SESSION['Session_id'];
 
+    
+    
+    
+    
     // Update the session table to mark as logged out
     $stmt = $mysqli->prepare("UPDATE sessions SET logout_time = NOW(), is_active = FALSE WHERE session_id = ? AND User_id = ?");
     $stmt->bind_param("si", $session_id, $user_id);
@@ -30,8 +35,11 @@ if (isset($_SESSION['User_id']) && isset($_SESSION['Session_id'])) {
     session_unset();
     session_destroy();
 
-    echo "Logout successful";
+    echo "Logged out successfully";
 } else {
     echo "No active session found";
 }
 ?>
+
+
+
