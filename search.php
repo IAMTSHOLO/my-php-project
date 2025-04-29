@@ -38,12 +38,12 @@ if ($searchType === 'document') {
 } else if ($searchType === 'lawyer') {
     // Check if searching by lawyer ID (numeric input)
     if (is_numeric($keyword)) {
-        $sql = "SELECT l.lawyer_id, u.first_name, u.last_name, l.expertise, l.years_of_experience 
+        $sql = "SELECT l.id, u.first_name, u.last_name, l.expertise, l.years_of_experience 
                 FROM lawyers l
                 JOIN users u ON l.User_id = u.User_id
-                WHERE l.lawyer_id = '$keyword'";
+                WHERE l.id = '$keyword'";
     } else {
-        $sql = "SELECT l.lawyer_id, u.first_name, u.last_name, l.expertise, l.years_of_experience 
+        $sql = "SELECT l.id, u.first_name, u.last_name, l.expertise, l.years_of_experience 
                 FROM lawyers l
                 JOIN users u ON l.User_id = u.User_id
                 WHERE u.first_name LIKE '%$keyword%' 
@@ -55,7 +55,7 @@ if ($searchType === 'document') {
 
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo "Lawyer ID: " . $row['lawyer_id'] . " | Name: " . $row['first_name'] . " " . $row['last_name'] . 
+            echo "Lawyer ID: " . $row['id'] . " | Name: " . $row['first_name'] . " " . $row['last_name'] . 
                  " | Expertise: " . $row['expertise'] . 
                  " | Experience: " . $row['years_of_experience'] . " years\n";
         }
