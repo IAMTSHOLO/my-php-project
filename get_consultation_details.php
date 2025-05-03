@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-header("Content-Type: text/plain");
+header("Content-Type: text/plain");  // Change to plain text for easy display
 
 $servername = "localhost";
 $username = "root"; // Change this to your DB username
@@ -16,7 +16,9 @@ if ($mysqli->connect_error) {
 }
 
 // Get the consultation ID from the request
-$consultation_id = $_GET['consultation_id']; // Using GET instead of POST
+$consultation_id = $_GET['consultation_id'];
+error_log("Consultation ID: " . $consultation_id);
+
 
 // Prepare SQL query to retrieve consultation details
 $query = "SELECT consultations.*, 
@@ -24,7 +26,7 @@ $query = "SELECT consultations.*,
                  users.contact_details
           FROM consultations
           JOIN lawyers ON consultations.id = lawyers.id
-          JOIN users ON lawyers.user_id = users.User_id
+          JOIN users ON lawyers.User_id = users.User_id
           WHERE consultations.consultation_id = ?";
 
 $stmt = $mysqli->prepare($query);
@@ -36,7 +38,7 @@ $result = $stmt->get_result();
 if ($result->num_rows > 0) {
     $consultation = $result->fetch_assoc();
     
-    // Output the details as plain text
+    // Output the details as plaintext
     echo "Lawyer Name: " . $consultation['lawyer_name'] . "\n";
     echo "Consultation Type: " . $consultation['consultation_type'] . "\n";
     echo "Phone Number: " . $consultation['contact_details'] . "\n";

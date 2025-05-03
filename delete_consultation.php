@@ -1,4 +1,5 @@
 <?php
+file_put_contents("hit_log.txt", "Script was hit\n", FILE_APPEND);
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
@@ -30,18 +31,23 @@ if (isset($_POST['consultation_id'])) {
         
         // Execute the query
         if ($stmt->execute()) {
-            echo "success";  // Send success response
+            // Check if any rows were affected
+            if ($stmt->affected_rows > 0) {
+                echo "success";  // Successfully deleted
+            } else {
+                echo "no_rows_deleted";  // No rows deleted (could be invalid ID)
+            }
         } else {
-            echo "error";    // Send error response
+            echo "error_executing_query";    // Error executing the SQL query
         }
 
         // Close the prepared statement
         $stmt->close();
     } else {
-        echo "error";  // Failed to prepare the SQL statement
+        echo "error_preparing_statement";  // Failed to prepare the SQL statement
     }
 } else {
-    echo "error";  // Consultation ID is not set
+    echo "consultation_id_not_set";  // Consultation ID is not set
 }
 
 // Close the database connection
