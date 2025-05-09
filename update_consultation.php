@@ -5,9 +5,9 @@ ini_set('display_errors', 1);
 header('Content-Type: text/html; charset=UTF-8');
 
 $servername = "localhost";
-$username = "root"; // DB username
-$password = "";     // DB password
-$dbname = "legalservices"; // Your database name
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
+$dbname = "legalservices";// Your database name
 
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 

@@ -11,8 +11,8 @@ error_log("SESSION data: " . print_r($_SESSION, true));
 
 // Database connection setup
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
 
 // Create a connection

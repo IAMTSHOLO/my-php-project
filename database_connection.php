@@ -1,9 +1,9 @@
 <?php
 var_dump($_POST);
 $servername = "localhost";
-$username = "root";    // Default XAMPP MySQL username
-$password = "";        // Default XAMPP MySQL password (empty)
-$dbname = "legalservices"; // Replace with your database name
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
+$dbname = "legalservices";
 
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $dbname);

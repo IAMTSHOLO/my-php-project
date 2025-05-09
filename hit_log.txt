@@ -1,1 +1,127 @@
 Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 1746541682444
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 1746541728178
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 64
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 64
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 1746541893517
+Script was hit
+Script was hit
+Received sender_id: 100, receiver_id: 19, message_id: 1746542471922
+Script was hit
+Received message_id: 66
+Script was hit
+Received message_id: 1746542589280
+Script was hit at 2025-05-06 16:53:12
+POST data: Array
+(
+    [message_id] => 1746543190271
+)
+
+Received message_id: 1746543190271
+Message not found with ID: 1746543190271
+Script was hit at 2025-05-06 16:53:39
+POST data: Array
+(
+    [message_id] => 68
+    [sender_id] => 100
+    [receiver_id] => 19
+)
+
+Received message_id: 68
+Found message with ID 68: Array
+(
+    [message_id] => 68
+    [sender_id] => 100
+    [receiver_id] => 19
+    [message] => hello
+    [timestamp] => 2025-05-06 16:53:07
+)
+
+Message deleted successfully
+Script was hit at 2025-05-06 16:53:41
+POST data: Array
+(
+    [message_id] => 68
+    [sender_id] => 100
+    [receiver_id] => 19
+)
+
+Received message_id: 68
+Message not found with ID: 68
+Script was hit at 2025-05-06 16:57:04
+POST data: Array
+(
+    [message_id] => 1746543421281
+)
+
+Received message_id: 1746543421281
+Message not found with ID: 1746543421281
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit at 2025-05-07 15:06:22
+POST data: Array
+(
+    [message_id] => 1746623179614
+)
+
+Received message_id: 1746623179614
+Message not found with ID: 1746623179614
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit
+Script was hit

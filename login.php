@@ -7,8 +7,8 @@ error_reporting(E_ALL);
 
 // Database connection
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
 
 // Create connection

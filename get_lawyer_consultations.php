@@ -1,5 +1,8 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "legal_app");
+$servername = "localhost";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
+$dbname = "legalservices";
 
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);

@@ -4,8 +4,8 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
 
 // Create connection

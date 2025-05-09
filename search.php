@@ -9,8 +9,8 @@ $keyword = $_GET['q'] ?? '';
 
 // Database connection
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
 
 $mysqli = new mysqli($servername, $username, $password, $dbname);

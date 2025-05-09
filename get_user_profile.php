@@ -2,10 +2,10 @@
 header("Content-Type: text/plain");
 
 // DB config
-$host = "localhost";
+$servername = "localhost";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
-$username = "root";
-$password = "";
 
 $mysqli  = new mysqli($host, $username, $password, $dbname);
 

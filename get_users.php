@@ -5,8 +5,8 @@ ini_set('display_errors', 1);
 header("Content-Type: text/plain"); // Explicitly send plain text
 
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
 
 // Create connection

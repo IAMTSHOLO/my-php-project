@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 header("Content-Type: text/plain");
 
 // DB config
-$host = "localhost";
+$servername = "localhost";
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
 $dbname = "legalservices";
-$username = "root";
-$password = "";
 
 $mysqli  = new mysqli($host, $username, $password, $dbname);
 
@@ -57,7 +57,7 @@ if (isset($_POST['expertise'])) {
     $expertise = $_POST['expertise'];
     
     // Check if the user exists in the lawyers table
-    $checkSql = "SELECT Lawyer_id FROM lawyers WHERE User_id = ?";
+    $checkSql = "SELECT id FROM lawyers WHERE User_id = ?";
     $checkStmt = $mysqli->prepare($checkSql);
     $checkStmt->bind_param("i", $User_id);
     $checkStmt->execute();

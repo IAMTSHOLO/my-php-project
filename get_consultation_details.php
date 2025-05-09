@@ -5,9 +5,9 @@ ini_set('display_errors', 1);
 header("Content-Type: text/plain");  // Change to plain text for easy display
 
 $servername = "localhost";
-$username = "root"; // Change this to your DB username
-$password = ""; // Change this to your DB password
-$dbname = "legalservices"; // Your database name
+$username = "Tsholofelo";
+$password = "IAMTSHOLO199925";
+$dbname = "legalservices";
 
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
