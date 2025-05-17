@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bind_param("iisssss", $User_id, $id, $legal_area, $consultation_type, $preferred_date, $time_slot, $phone_number);
 
     if ($stmt->execute()) {
-        echo "Success: Your consultation has been booked!";
+        echo "Success: Your consultation has been booked! ID:" . $stmt->insert_id;
     } else {
         echo "Error: Failed to book consultation " . $stmt->error;
     }
